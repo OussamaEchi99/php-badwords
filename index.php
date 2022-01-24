@@ -14,7 +14,7 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi odit libero fuga voluptate molestias tenetur? Explicabo harum veniam modi omnis? Pariatur quod eos nemo voluptates dignissimos quas consectetur, ratione esse!';
     $text_length = strlen($text);
     $parola_da_censurare = $_GET['word'];
-    $replace_word = str_replace('ipsum', '***', $text);
+    $replace_word = str_replace($parola_da_censurare, '***', $text);
     $text_replaced_text = strlen($replace_word);
     ?>
 
